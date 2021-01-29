@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+	Name: 					Adah Burke
+	Created: 				2021-01-13
+	Most Recent Revision:
+
+	o 
+-->
+
+<html lang="en">
+<head>
+<title>Contact Me</title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1>Contact Me</h1>
+		</header>
+		
+		<nav>
+			<hr />
+			<a href="index.html">Home</a>
+			<hr />
+		</nav>
+		
+		<form action="submit.html" method="POST">
+			<h2>Information Request</h2>
+			
+			<label for="firstName">First Name:</label><br />
+			<input type="text" id="firstName" name="firstName" /><br />
+			<label for="lastName">Last Name:</label><br />
+			<input type="text" id="lastName" name="lastName" /><br />
+			<label for="phoneNumber">Phone Number:</label><br />
+			<input type="text" id="phoneNumber" name="phoneNumber" /><br />
+			<br />
+			<label for="callTimes">Best time to call:</label><br />
+			<select id="callTimes" name="callTimes">
+				<option value="default" selected>--Select One--</option>
+				<option value="morning">Morning (8AM to 12PM Eastern)</option>
+				<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+				<option value="evening">Evening (5PM to 8PM Eastern)</option>
+			</select></br >
+			<br />
+			<fieldset>
+				<legend>I am interested in (check all that apply):</legend>
+				<input type="checkbox" id="frontEnd" name="interests" value="frontEnd" />Front-End Web Development<br />
+				<input type="checkbox" id="backEnd" name="interests" value="backEnd" />Back-End Web Development<br />
+				<input type="checkbox" id="database" name="interests" value="database" />Database Design<br />
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>I have filled in the client questionnaire form:</legend>
+				<input type="radio" id="choice1Yes" name="clientQuestionnaire" value="YES" />Yes<br />
+				<input type="radio"id="choice1No" name="clientQuestionnaire" value="NO" />No<br />
+			</fieldset>
+			<br />
+			<label for="additionalInformation">Additional information:</label><br />
+			<textarea name="additionalInformation"></textarea><br />
+			<input type="submit" />
+		</form>
+	</main>
+</body>
+</html>
