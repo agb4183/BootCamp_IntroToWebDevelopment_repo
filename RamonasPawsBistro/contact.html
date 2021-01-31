@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--
+	Name: 					Adah Burke
+	Created: 				2021-01-28
+	Most Recent Revision:	2021-01-28
+
+-->
+
+<html lang = "en">
+<head>
+<title>Contact Us</title>
+</head>
+	
+<body>
+	<main>
+		<header>
+			<h1>Ramona's Paws Bistro</h1>
+		</header>
+		
+		<nav>
+			<hr />
+			<p>
+				<a href="index.html">Home</a>	
+				<a href="menu.html">Menu</a>
+				<a href="contact.html">Contact Us</a>
+			</p>
+			<hr />
+		</nav>	
+		
+		<form action="submit.html" method="POST">
+			
+			<label for="customerFullName">Name:</label>
+			<input type="text" id="customerFullName" name="customerFullName" /><br />
+
+			<label for="customerEmail">Email:</label>
+			<input type="text" id="customerEmail" name="customerEmail" /><br />
+
+			<label for="customerPhoneNumber">Phone:</label>
+			<input type="text" id="customerPhoneNumber" name="customerPhoneNumber" /><br />
+
+			<label for="customerInquiry">Reason for Inquiry:</label>
+			<select id="customerInquiry" name="customerInquiry">
+				<option value="catering" selected>Catering</option>
+				<option value="privateParty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select></br >
+
+			<label for="additionalInformation">Additional information:</label><br />
+			<textarea name="additionalInformation"></textarea><br />
+
+			<label for="priorVisit">Have you been to the restaurant?</label>
+			<input type="radio"id="choice1No" name="priorVisit" value="NO" checked />No
+			<input type="radio" id="choice1Yes" name="priorVisit" value="YES" />Yes<br />
+			
+			<label for="customerContact">Best days to contact you:</label>
+			<input type="checkbox" id="monday" name="customerContact" value="monday" />M
+			<input type="checkbox" id="tuesday" name="customerContact" value="tuesday" />T
+			<input type="checkbox" id="wednesday" name="customerContact" value="wednesday" />W
+			<input type="checkbox" id="thursday" name="customerContact" value="thursday" />Th
+			<input type="checkbox" id="friday" name="customerContact" value="friday" />F
+			<br />
+			<input type="submit" value="Send Request" />
+		</form>
+
+		<footer>
+			<hr />		
+			<p>
+				<label for="address">999 San Francisco St, Santa Fe, NM, 87501</label><br />
+				<label for="phoneNumber">505.982.PAWS (7297)</label><br />
+			</p>
+		</footer>
+	</main>
+</body>
+</html>
