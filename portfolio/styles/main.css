@@ -1,0 +1,84 @@
+/*
+	Name: 					Adah Burke
+	Created: 				2021-02-14
+	Most Recent Revision:	2021-02-14
+*/
+
+body {
+	color: #120F15;
+	background-color: #E1E1E1;
+	font-family: Helvetica, Arial, sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header, footer {
+	background-color: #B6B5B7;
+	text-align: center;
+}	
+ 
+header {
+	height: 100px;
+	padding: 20px 10px 15px 10px;
+}	
+
+h1 {
+	font-size: 2.5em;
+}
+
+nav {
+	border-top: 3px ridge #635E67;
+	border-bottom: 3px groove #635E67;
+}
+
+nav a {
+	font-size: 1.2em;
+	background-color: #413749;
+	color: #FFF;
+	padding: 8px;
+	border-top: 1px solid #120F15;
+	border-right: 1px solid #635E67;
+	border-bottom: 1px solid #635E67;
+	border-left: 1px solid #120F15;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+
+nav a:visited {
+	color: #B6B5B7;
+}
+
+nav a:active {
+	font-weight: bold;
+}
+
+nav a:hover {
+	background-color: #FFF;
+	color: #413749;
+}
+
+footer {
+	padding: 5px 0px 10px 0px;
+	border-top: 3px ridge #635E67;
+}
+
+article img {
+	float:left;
+}
+
+article {
+	margin-bottom: 16px;
+}
+
+.right-content {
+	float:left;
+}	
+
+.clear-float {
+	clear:both;	
+}
+

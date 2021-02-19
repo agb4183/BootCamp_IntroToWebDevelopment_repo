@@ -1,16 +1,55 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 
 <!--
 	Name: 					Adah Burke
 	Created: 				2021-01-13
-	Most Recent Revision:
+	Most Recent Revision:	2021-02-14
 
 	o 
 -->
 
 <html lang = "en">
 <head>
-<title>Adah Burke's Portfolio</title>
+	<title>Adah Burke's Portfolio</title>
+
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		caption {
+			margin-bottom: 10px;
+			font-size: larger;
+			font-weight: bolder;
+			color: #120F15;
+		}
+		
+		table, th, td {
+			border: 1px solid #120F15;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+		
+		table {
+			width: 90%;
+			margin: auto;
+		}
+
+		tr {
+			height: 30px;
+		}
+		
+		thead {
+			background-color: #413749;
+			color: #FFF;
+		}
+		
+		tbody {
+			color: 120F15;
+		}
+		
+		tbody tr:nth-child(even) {
+			background-color: #B6B5B7;
+		}
+	</style>
 </head>
 	
 <body>
@@ -19,92 +58,102 @@
 			<h1>Portfolio for Adah Burke</h1>
 		</header>
 		
-		<nav>
-			<hr />
-			<!-- TODO: We need to add links to projects.html, contact.html and testimonials.html -->
+		<nav id="nav">
 			<p><a href="projects.html">Projects</a></p>	
 			<p><a href="contact.html">Contact</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
-			<hr />
+			<div class="clear-float"></div>
 		</nav>	
 		
 		<section>
 			<article id="about">
-				<h2><em>About Me</em></h2>	
-				<img src="images/AdahBurke.jpg" alt="Portrait of Adah Burke"/>
+				<h2><em>About Me</em></h2>
+				
+				<img src="images/AdahBurke.jpg" alt="Portrait of Adah Burke" width="200" />
+				
 				<p>Analytical • Thoughtful • <strong>Likes to problem solve</strong> • Attention to detail • Able to speak about technical problems
 					using language that can be understood by non-technical members of the conversation or meeting</p>				
 				<p>I grew up mostly living in New Mexico where we moved to a different town almost every year.  <strong>I was fortunate to experience living in different
 					communitites all over the state.</strong></p>
+				<div class="clear-float"></div>
 			</article>
 			
 			<article id="experience">			
 				<h2><em>Past Experience</em></h2>
 				
-				<img src="images/SantaFeSunset.jpg" alt="Santa Fe NM Sunset" />
+				<img src="images/SantaFeSunset.jpg" alt="Santa Fe NM Sunset" width="200" />
 				
+				<div class="right-content">
 				<table>
 					<caption>Employment History</caption>
-					<tr>
-						<th>Company</th>
+					<thead>
+						<tr>
+							<th>Company</th>
 							<th>Location</th>
 							<th>Position</th>
 							<th>Years of Employment</th>
 						</tr>
-					<tr>
-						<td>THORNBURG INVESTMENT MANAGEMENT</td>
-						<td>Santa Fe, NM</td>
-						<td>Senior Programmer Analyst</td>
-						<td>July 2019 - Present</td>
-					</tr>
-					<tr>
-						<td colspan="4">•	A primary developer with increased roles and responsiblities</td>
-					</tr>
-					<tr>
-						<td>THORNBURG INVESTMENT MANAGEMENT</td>
-						<td>Santa Fe, NM</td>
-						<td>Programmer Analyst</td>
-						<td>August 2014 - July 2019</td>
-					</tr>
-					<tr>
-						<td colspan="4">•	A primary developer</td>
-					</tr>
-					<tr>
-						<td>THORNBURG INVESTMENT MANAGEMENT</td>
-						<td>Santa Fe, NM</td>
-						<td>Operations Associate</td>
-						<td>May 2006 - August 2014</td>
-					</tr>
-					<tr>
-						<td colspan="4">•	Series 24, 7, 6, 63 Licenses<br />
-	•	Continuing Education: 2778AC - Writing Queries Using Microsoft® SQL Server™ 2008 Transact-SQL<br />
-	•	22c-2 account surveillance, issuing SDR requests, analysis of returned data, issuing warning/trading restrictions<br />
-	•	Creating and updating queries in SQL Server Management Studio 2008/2012 and Microsoft Access to compile data for ICI Surveys, Market Metrics Surveys, and other Ad Hoc requests<br />
-	•	Creating queries to aid in validation of Monthly/Quarterly/Annual invoices<br />
-	•	Maintaining, updating, and scheduling existing Crystal reports in Crystal XI, creation of new Crystal reports through use of Command function and stored procedures<br />
-	•	Over the past 6 months migrated Charles Schwab reporting from monthly reports pulled from their website and uploaded via RIA processing to DSA/DSP files<br />
-	•	Scrubbing data relating to Broker/Dealer conversions and daily trading activity<br />
-	•	Assist with inbound file analysis and business rules relating to database/application development<br />
-	•	Training associates in improving data scrubbing and conversion processing</td>
-					</tr>
-					<tr>
-						<td>ASUNM CRAFTS STUDIO</td>
-						<td>Albuquerque, NM</td>
-						<td>Assistant Director</td>
-						<td>January 2001-December 2004</td>
-					</tr>
-					<tr>
-						<td colspan="4">•	Employee hiring/firing<br />
-	•	Budget planning/meetings/re-allocations</td>
-					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>THORNBURG INVESTMENT MANAGEMENT</td>
+							<td>Santa Fe, NM</td>
+							<td>Senior Programmer Analyst</td>
+							<td>July 2019 - Present</td>
+						</tr>
+						<tr>
+							<td colspan="4">•	A primary developer with increased roles and responsiblities</td>
+						</tr>
+						<tr>
+							<td>THORNBURG INVESTMENT MANAGEMENT</td>
+							<td>Santa Fe, NM</td>
+							<td>Programmer Analyst</td>
+							<td>August 2014 - July 2019</td>
+						</tr>
+						<tr>
+							<td colspan="4">•	A primary developer</td>
+						</tr>
+						<tr>
+							<td>THORNBURG INVESTMENT MANAGEMENT</td>
+							<td>Santa Fe, NM</td>
+							<td>Operations Associate</td>
+							<td>May 2006 - August 2014</td>
+						</tr>
+						<tr>
+							<td colspan="4">•	Series 24, 7, 6, 63 Licenses<br />
+		•	Continuing Education: 2778AC - Writing Queries Using Microsoft® SQL Server™ 2008 Transact-SQL<br />
+		•	22c-2 account surveillance, issuing SDR requests, analysis of returned data, issuing warning/trading restrictions<br />
+		•	Creating and updating queries in SQL Server Management Studio 2008/2012 and Microsoft Access to compile data for ICI Surveys, Market Metrics Surveys, and other Ad Hoc requests<br />
+		•	Creating queries to aid in validation of Monthly/Quarterly/Annual invoices<br />
+		•	Maintaining, updating, and scheduling existing Crystal reports in Crystal XI, creation of new Crystal reports through use of Command function and stored procedures<br />
+		•	Over the past 6 months migrated Charles Schwab reporting from monthly reports pulled from their website and uploaded via RIA processing to DSA/DSP files<br />
+		•	Scrubbing data relating to Broker/Dealer conversions and daily trading activity<br />
+		•	Assist with inbound file analysis and business rules relating to database/application development<br />
+		•	Training associates in improving data scrubbing and conversion processing</td>
+						</tr>
+						<tr>
+							<td>ASUNM CRAFTS STUDIO</td>
+							<td>Albuquerque, NM</td>
+							<td>Assistant Director</td>
+							<td>January 2001-December 2004</td>
+						</tr>
+						<tr>
+							<td colspan="4">•	Employee hiring/firing<br />
+		•	Budget planning/meetings/re-allocations</td>
+						</tr>
+					</tbody>
 				</table>
+				</div>
+				
+				<div class="clear-float"></div>
 			</article>
 			
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>	
 				
-				<img src="images/Volleyball.bmp" alt="Adah Burke playing volleyball" />
+				<img src="images/Volleyball.bmp" alt="Adah Burke playing volleyball" width="200" />
 				
+				<div class="right-content">
 				<ul>
 					<li>Outdoor Activities</li>
 					<ol>
@@ -124,11 +173,13 @@
 						<li>Yoga</li>
 					</ul>
 				</ul>
+				</div>
+
+				<div class="clear-float"></div>
 			</article>
 		</section>
 			
 		<footer>
-			<hr />		
 			<p>&copy; 2021 Adah Burke.  All rights reserved.</p>
 		</footer>
 	</main>

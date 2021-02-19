@@ -1,0 +1,58 @@
+/*
+	Name: 					Adah Burke
+	Created: 				2021-02-14
+	Most Recent Revision:	2021-02-14
+*/
+
+label, fieldset {
+	font-size: 1.1em;
+}
+
+input[type=text] {
+	border: 2px solid #120F15;
+	width: 50%;
+	padding: 8px 8px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	font-size: 1.1em;
+	border-radius: 3px;
+}
+
+fieldset {
+	background-color: #D6D6D6;
+	width: 100%
+	padding: 12px 20px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+select, textarea {
+	margin: 12px 0;
+	font-size: 1em;
+	border-radius: 3px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #120F15;
+	background-color: #FFF;
+	resize: none;
+}	
+
+input[type=submit] {
+	font-size: 1.2em;
+	background-color: #413749;
+	color: #FFF;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+}	
+
+input[type=submit]:hover {
+	background-color: #FFF;
+	color: #413749;
+}
+
